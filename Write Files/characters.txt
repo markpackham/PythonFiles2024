@@ -1,1 +1,6 @@
-MarioLugiPeachYoshiBowserToad
+Mario
+Lugi
+Peach
+Yoshi
+Bowser
+Toad
