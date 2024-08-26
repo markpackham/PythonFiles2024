@@ -18,8 +18,8 @@ def create_path():
 
     # Use open method on "path" so it will already know of the path's existence
     # so we can avoid having to put path in as an argument
-    file = path.open('w')
-    file.write("Ganon")
+    file = path.open('a')
+    file.write("\nLink")
 
     return
 
