@@ -18,8 +18,14 @@ def create_path():
 
     # Use open method on "path" so it will already know of the path's existence
     # so we can avoid having to put path in as an argument
-    file = path.open('a')
-    file.write("\nLink")
+    # file = path.open('r')
+    # content = file.read()
+    # print(content)
+
+    file.close()
+
+    content = path.read_text()
+    print(content)
 
     return
 
