@@ -1,4 +1,4 @@
-# Files data to files
+# Write data to files
 
 characters = ["Mario", "Lugi", "Peach", "Yoshi", "Bowser", "Toad"]
 
