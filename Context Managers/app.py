@@ -4,7 +4,10 @@ def open_file():
     path = Path(__file__).parent / 'characters.txt'
     data = ["Mario", "Luigi", "Peach", "Yoshi", "Bowser"]
 
-# Context mangers - allow us to work in files then automatically close when work done
+# Context Mangers - allow us to work in files then automatically close when work done
+with path.open('w') as file:
+    for character in data:
+        file.write(character + "\n")
 
 def main():
     open_file()
