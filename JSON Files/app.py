@@ -21,7 +21,10 @@ def write_json():
     return
 
 def read_json():
-    return
+    with path.open('r') as file:
+        data = json.load(file)
+    # We see the data presented as a Python Dictionary
+    return data
 
 def main():
     write_json()
