@@ -1,4 +1,6 @@
 from pathlib import Path
+# Handle Json (we import the whole module unlike Path where we just use "pathlib")
+import json
 
 path = Path(__file__).parent / 'characters.json'
 
@@ -12,6 +14,10 @@ characters = {
 }
 
 def write_json():
+    with path.open('w') as file:
+        # We only want to indent 2 spaces when the file is written
+        # If we didn't provide an indent they'd all sit on one line
+        json.dump(characters, file, indent=2)
     return
 
 def read_json():
